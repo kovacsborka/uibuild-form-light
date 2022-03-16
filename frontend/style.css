@@ -52,11 +52,15 @@ body {
 
 h1 {
     display: flex;
+    width: 100%;
+    align-content: center;
+    text-align: center;
     font-family: 'EB Garamond', serif;
     font-weight: 400;
     font-size: 48px;
     color: #467745;
     margin: 20px;
+    justify-content: center;
 }
 
 
@@ -70,6 +74,8 @@ h1 {
     background-color: #fff;
     margin: 20px;
     padding: 20px;
+    color: #467745;
+
 }
 
 
@@ -83,24 +89,15 @@ textarea {
     margin: 20px;
     padding: 20px;
     margin-top: 0;
+    color: #467745;
+
 }
 
 ::placeholder {
-    color: #467745;
+    color: #78a778;
 }
 
 
-@media screen and (max-width: 520px) {
-    h1 {
-        font-size: 36px;
-        justify-self: flex-start;
-    }
-
-    #targy, textarea {
-        width: calc(100% - 40px);
-        margin-left: 20px;
-    }
-}
 
 span {
     font-family: 'Montserrat', sans-serif;
@@ -109,6 +106,9 @@ span {
     color: #467745;
     overflow-wrap: break-word;
 }
+
+
+
 
 button {
     font-family: 'EB Garamond', serif;
@@ -124,5 +124,27 @@ button {
 
 .checkboxdiv {
     width: 480px;
+    height: 40px;
     margin-bottom: 20px;
+    /* border: 2px solid black; */
+}
+
+
+@media screen and (max-width: 520px) {
+    h1 {
+        font-size: 36px;
+        justify-content: flex-start;
+        padding-left: 20px;
+
+    }
+
+    #targy, textarea {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+    
+    .checkboxdiv {
+        width: calc(100% - 40px);
+      
+    }
 }
